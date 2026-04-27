@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shahyan Abbas — Software Engineer Portfolio</title>
+  <meta name="description" content="Shahyan Abbas — Passionate Software Engineering student from Pakistan. Specializing in AI, web development, and creative problem-solving. Explore my projects and skills." />
+  <meta name="keywords" content="Shahyan Abbas, Software Engineer, Portfolio, Web Developer, AI, Python, C++, Pakistan" />
+  <meta name="author" content="Shahyan Abbas" />
+  <meta property="og:title" content="Shahyan Abbas — Software Engineer Portfolio" />
+  <meta property="og:description" content="Building my future through code and creativity." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <!-- Google Analytics (replace GA_MEASUREMENT_ID with your actual ID) -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+  -->
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="#home" class="nav-logo">SA.</a>
+      <div class="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀️</button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#journey">Journey</a>
+    <a href="#contact">Contact</a>
+    <button class="theme-toggle" id="themeToggleMobile" aria-label="Toggle theme" onclick="document.getElementById('themeToggle').click()">☀️</button>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="orb"></div>
+      <div class="orb"></div>
+      <div class="orb"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Available for Freelance & Internships
+        </div>
+        <h1>
+          Hi, I'm <span class="gradient-text">Shahyan Abbas</span>
+        </h1>
+        <h2 style="font-size:clamp(1.2rem,3vw,1.8rem);font-weight:600;color:var(--text-secondary);margin-bottom:8px;">
+          <span id="typingText"></span><span style="animation:pulse 1s infinite;color:var(--accent);">|</span>
+        </h2>
+        <p class="tagline">Building my future through code and creativity. Crafting innovative solutions with passion, precision, and purpose.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">🚀 Explore Projects</a>
+          <a href="#contact" class="btn btn-outline">💬 Hire Me</a>
+          <a href="#" class="btn btn-outline" id="downloadCV">📄 Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">About Me</span>
+        <h2 class="section-title">Driven by Curiosity, Powered by Code</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <div class="image-wrapper">
+            <div class="avatar-placeholder">👨‍💻</div>
+          </div>
+          <div class="floating-card card-1">
+            🎓 <span class="highlight">COMSATS</span> University
+          </div>
+          <div class="floating-card card-2">
+            📍 Pakistan
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <h3>A Passionate Builder of Tomorrow's Technology</h3>
+          <p>
+            I'm Shahyan Abbas — a Software Engineering student at COMSATS University Wah with an unrelenting passion for building software that matters. My journey in tech started with curiosity and has evolved into a committed pursuit of excellence in AI, web development, and creative problem-solving.
+          </p>
+          <p>
+            I thrive on challenges that push me to think differently. Whether it's architecting clean, scalable code or designing intuitive user experiences, I bring discipline, creativity, and a growth-focused mindset to every project. I'm actively improving my English communication and public speaking skills, because I believe a great engineer must also be a great communicator.
+          </p>
+          <p>
+            My philosophy is simple: <strong>learn relentlessly, build fearlessly, and grow consistently.</strong>
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number" data-count="3" data-suffix="+">0</div>
+              <div class="stat-label">Projects Built</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="5" data-suffix="+">0</div>
+              <div class="stat-label">Technologies</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="100" data-suffix="%">0</div>
+              <div class="stat-label">Dedication</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section" id="skills" style="background:var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">My Skills</span>
+        <h2 class="section-title">Tools & Technologies I Work With</h2>
+        <p class="section-desc">Constantly expanding my toolkit to build better, smarter solutions.</p>
+      </div>
+      <div class="skills-grid">
+        <!-- Programming -->
+        <div class="skill-category reveal">
+          <div class="cat-icon">💻</div>
+          <h3>Programming Languages</h3>
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">C++</span><span class="skill-percent">65%</span></div>
+            <div class="skill-bar"><div class="bar-fill" data-width="65%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">Python</span><span class="skill-percent">50%</span></div>
+            <div class="skill-bar"><div class="bar-fill" data-width="50%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">C#</span><span class="skill-percent">35%</span></div>
+            <div class="skill-bar"><div class="bar-fill" data-width="35%"></div></div>
+          </div>
+        </div>
+        <!-- Web Dev -->
+        <div class="skill-category reveal">
+          <div class="cat-icon">🌐</div>
+          <h3>Web Development</h3>
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">HTML</span><span class="skill-percent">75%</span></div>
+            <div class="skill-bar"><div class="bar-fill" data-width="75%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">CSS</span><span class="skill-percent">65%</span></div>
+            <div class="skill-bar"><div class="bar-fill" data-width="65%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">JavaScript</span><span class="skill-percent">45%</span></div>
+            <div class="skill-bar"><div class="bar-fill" data-width="45%"></div></div>
+          </div>
+        </div>
+        <!-- Tools & Concepts -->
+        <div class="skill-category reveal">
+          <div class="cat-icon">🛠️</div>
+          <h3>Tools & Concepts</h3>
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">Git & GitHub</span><span class="skill-percent">60%</span></div>
+            <div class="skill-bar"><div class="bar-fill" data-width="60%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">OOP & Algorithms</span><span class="skill-percent">55%</span></div>
+            <div class="skill-bar"><div class="bar-fill" data-width="55%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">Problem Solving</span><span class="skill-percent">70%</span></div>
+            <div class="skill-bar"><div class="bar-fill" data-width="70%"></div></div>
+          </div>
+        </div>
+        <!-- Soft Skills -->
+        <div class="skill-category reveal">
+          <div class="cat-icon">🤝</div>
+          <h3>Soft Skills</h3>
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">Communication</span><span class="skill-percent">60%</span></div>
+            <div class="skill-bar"><div class="bar-fill" data-width="60%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">Teamwork</span><span class="skill-percent">75%</span></div>
+            <div class="skill-bar"><div class="bar-fill" data-width="75%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span class="skill-name">Self-Learning</span><span class="skill-percent">85%</span></div>
+            <div class="skill-bar"><div class="bar-fill" data-width="85%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">My Projects</span>
+        <h2 class="section-title">Things I've Built</h2>
+        <p class="section-desc">Each project represents a challenge conquered and a lesson learned.</p>
+      </div>
+      <div class="projects-grid">
+        <!-- Featured: AI Health Assistant -->
+        <div class="project-card featured reveal">
+          <div class="project-inner">
+            <div class="project-thumb">
+              <div class="thumb-icon">🧠</div>
+              <span class="project-badge">⭐ Featured</span>
+            </div>
+            <div class="project-info">
+              <h3>AI Health Assistant</h3>
+              <p>A smart web-based assistant that helps users track habits, set routines, and improve daily productivity. Includes personalized suggestions, reminders, and a clean dashboard interface with future AI chatbot integration.</p>
+              <div class="project-features">
+                <span>Habit Tracking</span>
+                <span>Daily Reminders</span>
+                <span>Dashboard UI</span>
+                <span>AI Integration</span>
+              </div>
+              <div class="project-tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Concept AI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stammering App -->
+        <div class="project-card reveal">
+          <div class="project-thumb">
+            <div class="thumb-icon">🗣️</div>
+          </div>
+          <div class="project-info">
+            <h3>Stammering Improvement App</h3>
+            <p>A unique platform designed to help users improve speech fluency through daily exercises, guided speaking challenges, and motivational feedback.</p>
+            <div class="project-features">
+              <span>Speaking Challenges</span>
+              <span>Progress Tracking</span>
+              <span>Motivational System</span>
+            </div>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3D Car Game -->
+        <div class="project-card reveal">
+          <div class="project-thumb">
+            <div class="thumb-icon">🏎️</div>
+          </div>
+          <div class="project-info">
+            <h3>3D Car Driving Game</h3>
+            <p>A beginner-level 3D driving game built in Unity with multiple camera angles, smooth controls, collision detection, and engine sound integration.</p>
+            <div class="project-features">
+              <span>Camera Switching</span>
+              <span>Collision System</span>
+              <span>Sound FX</span>
+            </div>
+            <div class="project-tech">
+              <span>Unity</span><span>C#</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== JOURNEY ===== -->
+  <section class="section" id="journey" style="background:var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">My Journey</span>
+        <h2 class="section-title">Daily Learning & Growth</h2>
+        <p class="section-desc">Every day is a step forward. Here's how I'm building my path.</p>
+      </div>
+      <div class="journey-timeline">
+        <div class="journey-item reveal">
+          <div class="dot"></div>
+          <div class="date">Ongoing</div>
+          <h4>🎓 Studying Software Engineering</h4>
+          <p>Pursuing my degree at COMSATS University Wah, building a strong foundation in computer science, algorithms, and software design.</p>
+        </div>
+        <div class="journey-item reveal">
+          <div class="dot"></div>
+          <div class="date">Current Focus</div>
+          <h4>🌐 Web Development & AI Exploration</h4>
+          <p>Deepening my skills in HTML, CSS, JavaScript while exploring AI concepts and building practical projects that solve real problems.</p>
+        </div>
+        <div class="journey-item reveal">
+          <div class="dot"></div>
+          <div class="date">Daily Practice</div>
+          <h4>💪 Communication & Public Speaking</h4>
+          <p>Actively improving my English communication and public speaking skills through daily practice, reading, and engaging with communities.</p>
+        </div>
+        <div class="journey-item reveal">
+          <div class="dot"></div>
+          <div class="date">Next Goal</div>
+          <h4>🚀 Freelancing & Professional Growth</h4>
+          <p>Preparing to offer my skills on Fiverr and other platforms, while seeking internship opportunities to gain real-world experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-desc">Have a project in mind or want to collaborate? I'd love to hear from you.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Let's Build Something Amazing</h3>
+          <p>I'm always open to new opportunities, collaborations, and exciting projects. Whether you need a developer for your next big idea or just want to say hi — reach out!</p>
+          <div class="contact-links">
+            <a href="https://github.com/" target="_blank" class="contact-link" id="githubLink">
+              <div class="link-icon">📂</div>
+              <div>
+                <div class="link-text">GitHub</div>
+                <div class="link-sub">Check out my code</div>
+              </div>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" class="contact-link" id="linkedinLink">
+              <div class="link-icon">💼</div>
+              <div>
+                <div class="link-text">LinkedIn</div>
+                <div class="link-sub">Let's connect professionally</div>
+              </div>
+            </a>
+            <a href="https://fiverr.com/" target="_blank" class="contact-link" id="fiverrLink">
+              <div class="link-icon">🟢</div>
+              <div>
+                <div class="link-text">Fiverr</div>
+                <div class="link-sub">Hire me for freelance work</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">🚀 Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-socials">
+        <a href="https://github.com/" target="_blank" aria-label="GitHub">📂</a>
+        <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn">💼</a>
+        <a href="https://fiverr.com/" target="_blank" aria-label="Fiverr">🟢</a>
+      </div>
+      <p>&copy; 2026 Shahyan Abbas. Built with 💜 and dedication.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
